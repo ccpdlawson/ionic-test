@@ -1,4 +1,6 @@
-import {ReactNode} from 'react';
+import React, {ReactNode} from 'react';
+import {IonApp} from '@ionic/react';
+  
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -24,6 +26,7 @@ interface IProviders {
     children: ReactNode;
 }
 const Providers = ({children}: IProviders) => {
-    return <>{children}</>;
+    return <IonApp>{children}</IonApp>;
+
 }
 export default Providers;

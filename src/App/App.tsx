@@ -1,5 +1,5 @@
 import { Redirect, Route } from 'react-router-dom';
-import Providers from './core/Providers';
+import IonWrapper from './core/IonWrapper';
 
 import {
   IonApp,
@@ -17,8 +17,7 @@ import Tab2 from '../pages/Tab2';
 import Tab3 from '../pages/Tab3';
 
 const App: React.FC = () => (
-  <Providers>
-    <IonApp>
+  <IonWrapper>
       <IonReactRouter>
         <IonTabs>
           <IonRouterOutlet>
@@ -51,8 +50,7 @@ const App: React.FC = () => (
           </IonTabBar>
         </IonTabs>
       </IonReactRouter>
-    </IonApp>
-  </Providers>
+  </IonWrapper>
 );
 
 export default App;

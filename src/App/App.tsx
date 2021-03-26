@@ -1,8 +1,7 @@
 import { Redirect, Route } from 'react-router-dom';
-import IonWrapper from './core/IonWrapper';
+import {IonWrapper} from './core/IonWrapper';
 
 import {
-  IonApp,
   IonIcon,
   IonLabel,
   IonRouterOutlet,
@@ -12,9 +11,10 @@ import {
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { ellipse, square, triangle } from 'ionicons/icons';
-import Tab1 from '../pages/Tab1';
-import Tab2 from '../pages/Tab2';
-import Tab3 from '../pages/Tab3';
+
+import {Tab1} from './subtree/Tab1';
+import {Tab2} from './subtree/Tab2';
+import {Tab3} from './subtree/Tab3';
 
 const App: React.FC = () => (
   <IonWrapper>

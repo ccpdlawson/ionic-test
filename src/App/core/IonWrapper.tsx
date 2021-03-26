@@ -25,8 +25,7 @@ import './variables.css';
 interface IProviders {
     children: ReactNode;
 }
-const Providers = ({children}: IProviders) => {
+export const IonWrapper = ({children}: IProviders) => {
     return <IonApp>{children}</IonApp>;
 
 }
-export default Providers;

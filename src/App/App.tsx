@@ -16,7 +16,7 @@ import {Tab1} from './subtree/Tab1';
 import {Tab2} from './subtree/Tab2';
 import {Tab3} from './subtree/Tab3';
 
-const App: React.FC = () => (
+export const App: React.FC = () => (
   <IonWrapper>
       <IonReactRouter>
         <IonTabs>
@@ -52,5 +52,3 @@ const App: React.FC = () => (
       </IonReactRouter>
   </IonWrapper>
 );
-
-export default App;
